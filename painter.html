@@ -9,11 +9,11 @@
 <h2>Painter entry Aashritha Dodda</h2>
 
 <form>
-    <label for="hiddenPainter">The hidden painter name</label>
-    <input type ="password" id="hiddenPainter" value=Monet> <br>
+    <label for="hidden">The hidden painter name</label>
+    <input type ="password" id="hidden" value=Monet> <br>
 
-    <label for="GuessPainter">Guess the painter</label>
-    <input type ="text" id="GuessPainter"> 
+    <label for="guess">Guess the painter</label>
+    <input type ="text" id="guess"> 
     <br>
 
     <input type="button" onclick="checkPainter()" value="Get values from form">Check the guess
@@ -29,12 +29,12 @@
 
     function checkPainter (){
   
-        hiddenPainter = document.getElementById("hiddenPainter").value;
-        GuessPainter = document.getElementById("GuessPainter").value;
+        hidden = document.getElementById("hidden").value;
+        guess = document.getElementById("guess").value;
     
     
     
-    if(hiddenPainter==GuessPainter)
+    if(hidden==guess)
     {
         good +=1;
 
