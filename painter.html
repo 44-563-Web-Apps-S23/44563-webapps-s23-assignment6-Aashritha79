@@ -54,5 +54,34 @@
 }
 </script>
 
+
+<div class="container-fluid">
+    <img src="1.plant.jpg" class="img-fluid" id="click" alt="verbena" , onclick="selectImage()" height=100, width =100> 
+</div>
+<script>
+    useImage=1 
+    function selectImage(){
+        switch(useImage){
+            case 1:
+                document.getElementById("click").src="1.plant.jpg";
+                useImage++;
+
+                break;
+                
+                case 2:
+                    document.getElementById("click").src="2.plant.jpg";
+                    useImage++;
+
+                    break;
+
+                    case 3:
+                        document.getElementById("click").src= "3.plant.jpg";
+                        useImage=1;
+
+                        break;
+        }
+
+    }
+</script>
 </body>
 </html> 
